@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="a.html" method="POST">
+        <label for="user">Username</label><br>
+        <input type="text" id="user" name="username" value="hassan" readonly>
+        <hr>
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" placeholder="Enter Your E-mail" name="e-mail">
+        <hr>
+        <label for="pass">Password</label><br>
+        <input type="password" id="pass" minlength="5" maxlength="5" required placeholder="Enter Your Password"
+            name="password">
+        <hr>
+        <!-- <label for="phone">Mobile</label><br>
+        <input type="tel" id="phone" placeholder="+96407704541564" name="phone" pattern="[+]{1}[0-9]{14}">
+        <hr> -->
+
+        <!-- <label for="cars">Subject:</label><br>
+        <input type="text" id="cars" list="my-list" placeholder="Choose one of the topics" name="sub">
+        <datalist id="my-list">
+            <option value="java"></option>
+            <option value="javaScript"></option>
+            <option value="html"></option>
+        </datalist>
+        <hr> -->
+        <input type="hidden" id="custId" name="id" value="3487">
+        <h3>Please select your favorite OS:</h3>
+
+        <input type="radio" name="choose" id="Windows">
+        <label for="Windows">Windows</label>
+        <br>
+        <input type="radio" name="choose" id="linux">
+        <label for="linux">linux</label>
+        <br>
+        <input type="radio" name="choose" id="Mac">
+        <label for="Mac">Mac</label>
+        <br>
+        <br>
+
+        <hr>
+        <h3>Choose Your Checkboxes</h3>
+        <input type="checkbox" name="chack" id="home">
+        <label for="home">I have a Home</label>
+        <br>
+        <input type="checkbox" name="chack" id="car">
+        <label for="car">I have a Car</label>
+        <br>
+        <input type="checkbox" name="chack" id="Married">
+        <label for="Married">I'm a Married</label>
+        <br>
+        <hr>
+        <input type="submit" value="Send">
+    </form>
+</body>
+
+</html>
